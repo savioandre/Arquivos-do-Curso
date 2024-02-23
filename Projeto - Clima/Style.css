@@ -1,0 +1,101 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos Globais */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilos do Cabeçalho */
+.header {
+    text-align: center;
+}
+
+/* Estilos Compartilhados */
+.style {
+    margin: 0 auto;
+    width: 50%;
+    padding: 12px;
+}
+
+/* Estilos do Conteúdo Principal */
+div.main {
+    background-image: url(https://images.pexels.com/photos/1269777/pexels-photo-1269777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    border-radius: 6px;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    transition: opacity 1s ease-in;
+    padding: 0px;
+    max-width: 800px; /* Adicionando largura máxima para evitar que o conteúdo se estenda demais */
+    margin: 0 auto; /* Centralizando o conteúdo na página */
+}
+
+/* Estilos do Painel de Informações do Clima */
+div#climaInfo {
+    position: relative;
+    padding: 20px; /* Adicionando preenchimento interno para separar o conteúdo das bordas */
+    border-radius: 6px;
+    background-color: rgba(17, 8, 116, 0.4); /* Fundo semi-transparente para destacar o conteúdo */
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo, adicionando um visual mais sofisticado */
+}
+
+.icn {
+    display: flex;
+    align-items: center;
+}
+
+.icn .grs {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.informacoes p {
+    font-size: 12px;
+}
+
+.inf {
+    display: grid;
+    justify-items: center
+}
+
+.titulo {
+    font-weight: 200;
+    color: #ebebeb;
+}
+
+.exbibicao {
+    font-weight: 600;
+}
+
+
+/* Estilos para dispositivos de tela menores */
+@media screen and (max-width: 600px) {
+    div.main {
+        width: 100%; /* Define a largura como 100% para ocupar toda a largura da tela em dispositivos pequenos */
+        border-radius: 0; /* Removendo borda arredondada em dispositivos menores para aproveitar melhor o espaço */
+    }
+
+    div#climaInfo {
+        padding: 10px; /* Reduzindo o preenchimento interno para economizar espaço em dispositivos menores */
+    }
+
+    .informacoes {
+        flex-direction: column; /* Alterando a direção do flexbox para empilhar as informações verticalmente em dispositivos menores */
+    }
+
+    .informacoes p {
+        margin-bottom: 5px; /* Adicionando espaço entre os parágrafos de informações em dispositivos menores */
+    }
+}

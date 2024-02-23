@@ -1,0 +1,280 @@
+:root {
+    --background: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* position: relative; */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    color: #e67968;
+    font-style: italic;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+article {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #eee;
+    border-radius: 10px;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+aside {
+    width: 25%;
+    background-color: #eee;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    /* Coloca o rodapé no final da página */
+}
+
+/* Menu Hamburguer */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 47px;
+    width: 47px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mudarX {
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.mudarY {
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.esconder {
+    opacity: 0;
+}
+
+.btn-line {
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 20px;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+span {
+    line-height: 0;
+}
+
+/* Fim */
+
+/* Modal (01) */
+.on {
+    background-color: rgba(0, 0, 0, 0.90);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-1 {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0 10px;
+    max-width: 400px;
+    overflow: auto;
+    max-height: 96%;
+}
+
+article p.texto-noticia {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical; 
+}
+
+.off {
+    display: none;
+}
+
+.header-modal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.fechar svg path:hover {
+    fill: rgb(190, 14, 14);
+}
+
+article, span {
+    cursor: pointer;
+}
+/* Fim */
+
+/* Barra Lateral */
+.oculto {
+    transform: translate(50%, 0);
+    opacity: 0;
+    z-index: -1;
+    user-select: none;
+    transition: 0.4s;
+}
+
+.barra-lateral {
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 10px 0 0 10px;
+
+    position: absolute;
+    right: 0;
+    height: 100%;
+
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+}
+
+.local-busca {
+    padding: 4px 10px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+
+    display: inline-flex;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    padding: 8px 12px 0;
+}
+
+input#buscar {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+p.p-historico {
+    font-size: 12px;
+}
+
+.deletar-historico {
+    text-align: center;
+    margin-top: 16px;
+}
+
+button.botao-deletar {
+    font-size: 12px;
+    color: #D91414;
+    background-color: #d9d9d9;
+    padding: 3px 6px;
+    border-radius: 20px;
+    border: none;
+}
+/* Fim */

@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+
+.header, .listas, .titulo_editar, .botao_nova_lista, .layout_listas {
+    display: flex;
+}
+
+.header, .titulo_editar, .botao_nova_lista {
+    align-items: center;
+}
+
+.titulo_editar {
+    margin-bottom: 8px;
+}
+
+.listas, .layout_listas {
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.lista {
+    width: 250px;
+    min-height: 250px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.lista {
+    border: 2px solid #32a929;
+    background-color: #f7fcf7;
+    position: relative;
+}
+
+.botao_nova_lista {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px;
+    padding: 6px;
+    background: #f4f4f4;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    transition: background 0.8ms ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1000;
+}
+
+.botao_nova_lista:hover {
+    background: #ccc;
+}
+
+textarea, input {
+    width: 100%;
+    background: none;
+    border: none;
+    resize: none;
+    overflow: auto;
+    outline: none;
+}
+
+textarea {
+    height: 85%;
+}
+
+input {
+    height: 15%;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+span {
+    line-height: 0;
+}
+
+span.msg {
+    position: absolute;
+    left: 5px;
+    bottom: 4px;
+    font-size: 7px;
+    font-weight: 600;
+}
